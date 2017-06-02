@@ -121,19 +121,63 @@ package com.wrapper.classes;
      		     
      		    Boolean b1 = new Boolean(true); // instantiation of boolean b1
      		    Boolean b2 = new Boolean(false);
-                String s1 = "true"; 
+                String s1 = "127"; //"true";
      		    Boolean equality = b1.equals(b2); // to check equality
      		    System.out.println("b and b2 are the same" +equality) ;
      		    System.out.println("the hashcode of b1 is" + b1.hashCode()); // prints the hashcode value of the boolean true
      		    System.out.println("the parse boolean of s1 is " + Boolean.parseBoolean(null)); 
      		   
      		    		
+     		    // byte class
+     		    Byte f = 1;
+     		    System.out.println("the byte value " +f.byteValue()); // prints the byte value of a float
+     		    
+     		    System.out.println("the double value" +f.doubleValue());
+     		    
+     		    Byte ab;
+     		    ab = Byte.decode("127"); // decodes string to  Byte.
+     		    
+     		    String n = "Byte value is " +ab;
+     		    System.out.println(n );
+     		    
+     		    System.out.println("the values of f and n are equal" +f.equals(n));
+     		    
+     		    byte ab1 = Byte.parseByte(s1);
+     		    System.out.println(ab1);
+     		    
+     		    System.out.println("the Byte value of s1 is " +Byte.valueOf(s1) );
      		
-     		     
-     		 
-       	  
+     		    
+     		    // float class
+     		    Float f1 = 0.1f;
+     		    System.out.println("they are equal by" +Float.compare(f1, 1.3f));
+     		   
+     		    System.out.println(f1.floatToIntBits(1.6f));
+     		    
+     		    Float f2 = 0f/0 ;
+     		    
+     		    System.out.println("The number is infinite "  + f2.isInfinite());
+     		    
+     		   System.out.println("The hexvalue of f1 is"  + f1.toHexString(f2));
+     		   
+     		   //Double class
+     		   
+     		   Double d1 = 0.1, d2 = 0.0;
+     		   
+     		  System.out.println("they are equal by" +Double.compare(f1, 1.3f));
     		   
-    		}
-    		   
-    		   }
-
+   		      System.out.println(d1.doubleToLongBits(1.6));
+   		    
+   		    		    
+   		      System.out.println("The number is infinite "  + d2.isInfinite());
+   		    
+   		      System.out.println("The hexvalue of d1 is"  + d1.toHexString(f2));
+     		    
+     		    
+     		    
+     		    
+     
+     		    
+    		}}  
+     		
+			
