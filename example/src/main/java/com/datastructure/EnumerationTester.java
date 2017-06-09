@@ -9,7 +9,12 @@ public class EnumerationTester {
       Enumeration<String> days;
       Vector<String> dayNames = new Vector<String>(); // instantiated a vector...
       
-      
+      int[] array = {10,20,30,40,50};
+      //  shift by x positions...
+      // write a funct to to test if all letters are same.
+      // swap without temp
+      // read about generics
+      // source code
       dayNames.add("Sunday"); // added element to the vector 
       dayNames.add("Monday");
       dayNames.add("Tuesday");
@@ -50,14 +55,20 @@ public class EnumerationTester {
        // System.out.println(dayNames.clone());
        // System.out.println(dayNames.contains("Sunday"));
          
-         Stack st = new Stack();
+         Stack<Integer> st = new Stack<>(); // lifo 
          st.push(1);
+         st.push(2);
+         st.push(3);
+         st.push(4);
+         st.push(5);
+         
          System.out.println("stack :" +st);
-         st.push(bit);
+        // st.push(bit);
          System.out.println("pushed elements in to stack" +st);
          st.pop();
          System.out.println("after popping bit "+st);
          System.out.println("Is stack empty? "+st.empty()); 
-    
+ 
 }
-}
+ 
+   }
