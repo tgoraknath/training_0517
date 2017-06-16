@@ -3,23 +3,31 @@ import java.util.Arrays;
 
 
 public class Shift {
-
-	public static void main (String [] args){
+	private static void recursiveRR(int[] chars, int rby, int p, int v) {
+		  int tbp = p + rby;
+		  int l = chars.length;
+		  if(tbp >= l) {
+			   tbp = tbp-l; 
+			  }
+		  if(tbp == 0 || rby >= l) {
+		   chars[0] = v;
+		   return;
+		  }
 		
-	int [] array = {1,2,3,4,5,6,7,8};
-    int  n =1;
-
-   for(int i = 0; i<n; i++){
-
-       for(int j = array.length-1; j>0; j--){
-           int temp = array[j];
-           array[j] = array[j-1];
-           array[j-1] = temp;
-
-       }
-
-    }
-System.out.println(Arrays.toString(array));
-  
+		  int tbv = chars[tbp];
+		  chars[tbp] = v;
+		  
+		  recursiveRR(chars, rby, tbp, tbv);
+		  
+		 }
+	public static void main (String [] args){
+	
+	int [] array = {10,20,30,40,50,60,70,80};
+	// at 3rd iteration: 6+3 = 9 = 9-8 = 1
+	recursiveRR(array, 3, 0, array[0]);
+	System.out.println(Arrays.toString(array));
+    
+    
+  // left rotation.
    }
        } 

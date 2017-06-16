@@ -9,7 +9,7 @@ public class EnumerationTester {
       Enumeration<String> days;
       Vector<String> dayNames = new Vector<String>(); // instantiated a vector...
       
-      int[] array = {10,20,30,40,50};
+   
       //  shift by x positions...
       // write a funct to to test if all letters are same.
       // swap without temp
