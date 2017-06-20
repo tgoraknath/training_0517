@@ -28,6 +28,6 @@ public class Shift {
 	System.out.println(Arrays.toString(array));
     
     
-  // left rotation.
+ 
    }
        } 
