@@ -16,10 +16,11 @@ public class ShiftList {
 			
 		}
 		li.set(j, temp);
-		
+		int k = i+1;
+		System.out.println("For  " +k+ "  rotation(s) the List is:");
 		System.out.println(Arrays.toString(li.toArray()));
 	}
-
+		
 		
 	}
      public static void main(String[] args){
